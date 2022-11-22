@@ -47,23 +47,32 @@
     <nav id="navbarPlaceholder"></nav>
 
     <!-- the body of your page goes here -->
-    <div class="px-4 pt-5 my-5 text-center border-bottom">
-        <div class="overflow-hidden" style="max-height: 30vh;">
-            <div class="container px-5">
-                <img src="images/image.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image"
-                    width="200" height="200" loading="lazy">
-            </div>
-        </div>
-        <h1 class="display-4 fw-bold">Braden Demo 11</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">This is an app that lets you create a magic the gathering deck online.</p>
-            <p>This is some text that i am using to fill my project. Shout out to my friend Emma who plays magic with
-                me.</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
+    <!-- stuff -->
+    <div class="container">
+        <h2>Reviews for <span id="HikeName"> this hike</span></h2>
+        <div id="details-go-here"></div>
+        <!-- Here is container for cards  -->
+        <div class="container">
+            <div id="CardGroup" class="row row-cols-auto">
             </div>
         </div>
     </div>
+
+    <template id="CardTemplate">
+        <div class="card">
+            <img class="card-img-top">
+            <div class="card-body">
+                <h5 class="title">placeholder</h5>
+                <p class="level">placeholder</p>
+                <p class="season">placeholder</p>
+                <p class="scrambled">placeholder</p>
+                <p class="flooded">placeholder</p>
+                <br>
+                <p class="description">This card has supporting text below as a natural lead-in to additional content.
+                </p>
+            </div>
+        </div>
+    </template>
 
     <!-- our own footer goes here-->
     <nav id="footerPlaceholder"></nav>
@@ -74,6 +83,7 @@
     <script src="./scripts/firebaseAPI_TEAM99.js"></script>
     <script src="./scripts/skeleton.js"></script>
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/eachHike.js"></script>
 
 </body>
 
